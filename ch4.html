@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title></title>
+    <script src="http://code.jquery.com/jquery-3.3.1.js">
+    </script>
+    <script>
+      $(document).ready (function(){
+        $('#sup').click(function(){
+          $('.slide').slideUp(3000);
+        });
+        $('#sdown').click(function(){
+          $('.slide').slideDown(3000);
+        });
+        $("#1").css("color","blue");
+      });
+      </script>
+  </head>
+  <body>
+    <h1 id="1">명일방주</h1>
+    <img src ="mung.png">
+    <p>명일방주는 마물을 주제로 한 전략 모바일 게임입니다. 게임에서, 플레이어는 “마물 대원”을 가득 실은 방주를 관리하며, 어디서 온건지 모를 광석 재난을 조사하기 위해 길을 떠납니다. 이 드넓고 위험천만한 세계에서, 당신은 어쩌면 황무지 속 도시의 폐허를 발견할 수도 있고, 신비로운 아인종의 나라를 찾을 수도 있으며, 풀어낼 수 없는 비밀을 맞닥뜨리거나, 더없이 끔찍한 전쟁에 발을 담을 수도 있습니다. 판타지와 이종족이 있는 이 세계에서 역사와 상상, 감정과 얽힘을 체험하세요!
+      <form>
+      <input type="button" id="sup" value="이미지 가리기">
+      <input type="button" id="sdown" value="이미지 보이기">
+      </form>
+      <div class="slide">
+        <img src="mung1.jpg" width=300 height=300>
+        </div>
+        <div class="slide">
+          <img src ="mung2.jpg" width=300 height=300>
+          </div>
+      <style>
+        .slide{
+          width:210px;
+          border:2px solid #333;
+          box-shadow:2px 2px 3px #000;
+          float:left;
+          margin-top:30px;
+          margin-right:20px;
+        }
+        </style>
+  </body>
+</html>

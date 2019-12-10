@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title></title>
+    <script src="http://code.jquery.com/jquery-3.3.1.js">
+    </script>
+    <script>
+      $(document).ready (function(){
+        $('#sup').click(function(){
+          $('.slide').slideUp(3000);
+        });
+        $('#sdown').click(function(){
+          $('.slide').slideDown(3000);
+        });
+      });
+      </script>
+  </head>
+  <body>
+    <h1>Arcana Tactics</h1>
+    <header><h1> <img src ="question.png"/></header>
+    <p>게임 내 밸런스와 시너지 설계에서 부족한 점이 많이 보인다. 일례로 4성 유닛 중 스내쳐라는 유닛은 5성 유닛의 재료로 쓰지 못하지만 대신 낮은 확률로 아이템을 훔칠 수 있는데 유닛을 중첩할 수 있다보니 스내쳐를 집중 강화하고 다수의 스내쳐를 운용해서 최종 조합을 갖추고 버프까지 전부 챙겨 조합 운용 자체를 파괴했다. 지금은 패치로 다수의 스내쳐를 운용할 수 없도록 바뀌었지만 여전히 스내쳐 자체가 가진 특성은 유지가 되고 있으며 특정 유닛들이 훨씬 강해서 버려지는 캐릭터들이 있다는 점이 단점으로 꼽히고 있다.
+    <form>
+      <input type="button" id="sup" value="이미지 가리기">
+      <input type="button" id="sdown" value="이미지 보이기">
+      </form>
+      <div class="slide">
+        <img src="Arcana.png" width=300 height=300>
+        </div>
+        <div class="slide">
+          <img src ="snatcher.png" width=300 height=300>
+          </div>
+      <style>
+        .slide{
+          width:210px;
+          border:2px solid #333;
+          box-shadow:2px 2px 3px #000;
+          float:left;
+          margin-top:30px;
+          margin-right:20px;
+        }
+        </style>
+  </body>
+</html>

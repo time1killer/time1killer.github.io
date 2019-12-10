@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title></title>
+    <script src="http://code.jquery.com/jquery-3.3.1.js">
+    </script>
+    <script>
+      $(document).ready (function(){
+        $('#sup').click(function(){
+          $('.slide').slideUp(3000);
+        });
+        $('#sdown').click(function(){
+          $('.slide').slideDown(3000);
+        });
+      });
+      </script>
+  </head>
+  <body>
+    <h1>Last Origin</h1>
+    <img src ="lao.png" width="200" height="200">
+    <p> 중소 회사의 게임치고는 매우 극적인 성공을 거둔 게임이다. </p>
+    <p>게임의 규모에 비해 관심을 가지는 플레이어들이 많기 때문에 개발진의 능력이 여러모로 부족하는 점에는 대부분의 플레이어들이 동의하고 있다. </p>
+    <p>캐릭터 일러스트나 귀여운 SD캐릭터, 매력적인 설정, 섬세한 애니메이션등 아트적인 요소는 많은 플레이어들이 공감하는 장점이고, 예상 외의 전략적인 전투나 낮은 과금 유도도 호평 받는다.
+    <p>초반부터 플레이어들의 의견을 존중하며 피드백에 많이 신경쓰겠다는 발언을 했고, 이 말을 계속 지켰다. 오픈 이전부터 커뮤니티의 불만을 빠르게 캐치하여 다수의 피드백을 신속히 내놓은 여러 경우가 있다.
+    <form>
+      <input type="button" id="sup" value="이미지 가리기">
+      <input type="button" id="sdown" value="이미지 보이기">
+      </form>
+      <div class="slide">
+        <img src="cat.png" width=300 height=300>
+        </div>
+        <div class="slide">
+          <img src ="burning.gif" width=300 height=300>
+          </div>
+      <style>
+        .slide{
+          width:210px;
+          border:2px solid #333;
+          box-shadow:2px 2px 3px #000;
+          float:left;
+          margin-top:30px;
+          margin-right:20px;
+        }
+        </style>
+  </body>
+</html>
